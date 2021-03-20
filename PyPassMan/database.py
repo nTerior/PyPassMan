@@ -1,6 +1,6 @@
 import pickle
 
-from cryptography import decrypt_file, encrypt_file
+from PyPassMan.cryptography import decrypt_file, encrypt_file
 
 VERIFY_DATA = "@D87MJGP5W$a2DUs"
 

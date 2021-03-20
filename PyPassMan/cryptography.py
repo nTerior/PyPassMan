@@ -4,7 +4,7 @@ from Crypto import Random
 from Crypto.Cipher import AES
 from Crypto.Hash import SHA256
 
-from utils import password_file
+from PyPassMan.utils import password_file
 
 
 def chunkify(string, chunk_size):

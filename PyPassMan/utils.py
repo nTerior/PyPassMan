@@ -1,6 +1,6 @@
 import os
 
-password_file = os.getenv("HOME") + "/.local/share/pypassman/db"
+password_file = os.getenv("HOME") + "/.local/share/PyPassMan/db"
 
 
 def create_file():

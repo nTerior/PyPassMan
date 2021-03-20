@@ -1,8 +1,8 @@
 #!/bin/python
 from getpass import getpass
 
-from database import Database
-from utils import create_file, check_file_exists
+from PyPassMan.database import Database
+from PyPassMan.utils import create_file, check_file_exists
 
 
 def main():
@@ -19,7 +19,3 @@ def main():
     else:
         password = getpass("Password: ")
         db = Database(password)
-
-
-if __name__ == '__main__':
-    main()
