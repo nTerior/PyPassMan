@@ -13,11 +13,16 @@ setuptools.setup(
     description="An encrypted and secure password manager",
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/cephox/pypassman",
+    url="https://github.com/cephox/PyPassMan",
     author="ce_phox",
     author_email="paul-stier@gmx.de",
     license='GPLv3',
     classifiers=classifiers,
     packages=setuptools.find_packages(),
-    install_requires=open("requirements.txt").read().splitlines()
+    install_requires=open("requirements.txt").read().splitlines(),
+    entry_points={
+        "console_scripts": [
+            "pypassman=PyPassMan.pypassman:main"
+        ]
+    }
 )

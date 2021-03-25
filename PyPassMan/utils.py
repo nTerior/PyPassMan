@@ -11,3 +11,7 @@ def create_file():
 
 def check_file_exists():
     return os.path.isfile(password_file)
+
+
+def remove_file():
+    os.remove(password_file)
